@@ -5,6 +5,6 @@
 </h1>
 
 ### Install:
-```powershell
-# TODO: Create a deploy.py
+```cmd
+.\deploy.cmd
 ```
