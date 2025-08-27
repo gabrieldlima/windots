@@ -1,6 +1,18 @@
 @echo off
 @REM ===========================================================================
 
+winget install AgileBits.1Password
+winget install Discord.Discord
+winget install Git.Git
+winget install Microsoft.PowerToys
+winget install Microsoft.VisualStudio.2022.Community
+winget install Microsoft.VisualStudioCode
+winget install Valve.Steam
+winget install Wacom.WacomTabletDriver
+winget install Zen-Team.Zen-Browser
+
+@REM ===========================================================================
+
 set "windowsTerminalConfigSource=%LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
 set "windowsTerminalConfigDestination=%USERPROFILE%\source\repos\windots\wt\settings.json"
 
@@ -22,7 +34,7 @@ mklink "%gitConfigSource%" "%gitConfigDestination%"
 
 @REM ===========================================================================
 set "zedConfigSource=%APPDATA%\zed"
-set "zedConfigDestination=%USERPROFILE%\source\windots\zed"
+set "zedConfigDestination=%USERPROFILE%\source\repos\windots\zed"
 
 if exist "%zedConfigSource%" (
     rmdir /S /Q "%zedConfigSource%"
