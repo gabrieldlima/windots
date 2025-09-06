@@ -4,6 +4,7 @@
 winget install AgileBits.1Password
 winget install Discord.Discord
 winget install Git.Git
+winget install Logitech.GHUB
 winget install Microsoft.PowerToys
 winget install Microsoft.VisualStudio.2022.Community
 winget install Microsoft.VisualStudioCode
@@ -45,3 +46,13 @@ if not exist "%zedConfigDestination%" (
 )
 
 mklink /D "%zedConfigSource%" "%zedConfigDestination%"
+
+@REM ===========================================================================
+set "vimConfigSource=%USERPROFILE%\.vimrc"
+set "vimDestination=%USERPROFILE%\source\repos\windots\vim\.vimrc"
+
+if exist "%vimConfigSource%" (
+    del "%vimConfigSource%"
+)
+
+mklink "%vimConfigSource%" "%vimDestination%"
