@@ -5,8 +5,8 @@
   "centerOnLaunch": true,
   "copyFormatting": "none",
   "copyOnSelect": false,
-  "showTabsInTitlebar": false,
-  "alwaysShowTabs": false,
+  "showTabsInTitlebar": true,
+  "alwaysShowTabs": true,
   "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
   "keybindings": [
     {
@@ -111,7 +111,7 @@
         "applicationTheme": "dark"
       },
       "tab": {
-        "background": "#ebdbb2",
+        "background": "#00000000",
         "unfocusedBackground": "#00000000"
       },
       "tabRow": {
