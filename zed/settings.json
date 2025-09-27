@@ -1,4 +1,12 @@
 {
+  "minimap": {
+    "show": "always"
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
   "restore_on_startup": "none",
   "auto_update": false,
 
@@ -16,7 +24,7 @@
   },
 
   "tab_bar": {
-    "show": false
+    "show": true
   },
 
   "toolbar": {
@@ -69,6 +77,8 @@
     "elevated_surface.background": "#000000",
     "panel.background": "#000000",
     "status_bar.background": "#000000",
+    "tab.active_background": "#000000",
+    "tab.inactive_background": "#000000",
     "tab_bar.background": "#000000",
     "terminal.background": "#000000",
     "title_bar.background": "#000000",
