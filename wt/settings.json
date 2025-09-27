@@ -38,7 +38,8 @@
       "font": {
         "face": "Cascadia Code",
         "size": 12
-      }
+      },
+      "bellStyle": "none"
     },
     "list": [
       {
