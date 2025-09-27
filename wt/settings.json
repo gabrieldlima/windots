@@ -7,6 +7,12 @@
   "copyOnSelect": false,
   "showTabsInTitlebar": true,
   "alwaysShowTabs": true,
+  "disabledProfileSources": [
+    "Windows.Terminal.Azure",
+    "Windows.Terminal.PowershellCore",
+    "Windows.Terminal.VisualStudio",
+    "Windows.Terminal.Wsl"
+  ],
   "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
   "keybindings": [
     {
@@ -55,12 +61,6 @@
         "name": "Command Prompt"
       },
       {
-        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-        "hidden": false,
-        "name": "Azure Cloud Shell",
-        "source": "Windows.Terminal.Azure"
-      },
-      {
         "guid": "{7445729f-c6b2-596b-a5a4-981e2828c09a}",
         "hidden": false,
         "name": "Developer Command Prompt for VS 2022",
@@ -71,12 +71,6 @@
         "hidden": false,
         "name": "Developer PowerShell for VS 2022",
         "source": "Windows.Terminal.VisualStudio"
-      },
-      {
-        "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
-        "hidden": false,
-        "name": "Git Bash",
-        "source": "Git"
       }
     ]
   },
