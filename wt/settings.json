@@ -10,7 +10,6 @@
   "disabledProfileSources": [
     "Windows.Terminal.Azure",
     "Windows.Terminal.PowershellCore",
-    "Windows.Terminal.VisualStudio",
     "Windows.Terminal.Wsl"
   ],
   "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
