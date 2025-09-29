@@ -106,11 +106,11 @@
       },
       "tab": {
         "background": "#00000000",
-        "unfocusedBackground": "#00000000"
+        "unfocusedBackground": "#000000ff"
       },
       "tabRow": {
         "background": "terminalBackground",
-        "unfocusedBackground": "#00000000"
+        "unfocusedBackground": "#000000ff"
       }
     }
   ],
