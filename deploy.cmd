@@ -3,7 +3,6 @@
 
 winget install --exact --id=AgileBits.1Password
 winget install --exact --id=Discord.Discord
-winget install --exact --id=Git.Git
 winget install --exact --id=Logitech.GHUB
 winget install --exact --id=Microsoft.PowerShell
 winget install --exact --id=Microsoft.PowerToys
