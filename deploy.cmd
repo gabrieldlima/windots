@@ -56,3 +56,13 @@ if exist "%vimConfigSource%" (
 )
 
 mklink "%vimConfigSource%" "%vimDestination%"
+
+@REM ===========================================================================
+set "powershellConfigSource=%USERPROFILE%\Documents\PowerShell\Microsoft.PowerShell_profile.ps1"
+set "powershellDestination=%USERPROFILE%\.windots\powershell\profile.ps1"
+
+if exist "%powershellConfigSource%" (
+    del "%powershellConfigSource%"
+)
+
+mklink "%powershellConfigSource%" "%powershellDestination%"
