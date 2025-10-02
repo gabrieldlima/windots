@@ -26,7 +26,7 @@ mklink "%windowsTerminalConfigSource%" "%windowsTerminalConfigDestination%"
 
 @REM ===========================================================================
 set "gitConfigSource=%USERPROFILE%\.gitconfig"
-set "gitConfigDestination=%USERPROFILE%\.windots\.gitconfig"
+set "gitConfigDestination=%USERPROFILE%\.windots\git\.gitconfig"
 
 if exist "%gitConfigSource%" (
     del "%gitConfigSource%"
