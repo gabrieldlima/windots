@@ -1,16 +1,17 @@
 @echo off
 @REM ===========================================================================
 
-winget install AgileBits.1Password
-winget install Discord.Discord
-winget install Git.Git
-winget install Logitech.GHUB
-winget install Microsoft.PowerToys
-@REM winget install Microsoft.VisualStudio.2022.Community
-@REM winget install Microsoft.VisualStudioCode
-winget install Valve.Steam
-winget install Wacom.WacomTabletDriver
-winget install Zen-Team.Zen-Browser
+winget install --exact --id=AgileBits.1Password
+winget install --exact --id=Discord.Discord
+winget install --exact --id=Git.Git
+winget install --exact --id=Logitech.GHUB
+winget install --exact --id=Microsoft.PowerShell
+winget install --exact --id=Microsoft.PowerToys
+winget install --exact --id=RamenSoftware.Windhawk
+winget install --exact --id=Spotify.Spotify
+winget install --exact --id=Valve.Steam
+winget install --exact --id=Wacom.WacomTabletDriver
+winget install --exact --id=Zen-Team.Zen-Browser
 
 @REM ===========================================================================
 
