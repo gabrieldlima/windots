@@ -2,29 +2,28 @@
   "$help": "https://aka.ms/terminal-documentation",
   "$schema": "https://aka.ms/terminal-profiles-schema",
   "actions": [],
+  "alwaysShowTabs": true,
   "centerOnLaunch": true,
   "copyFormatting": "none",
   "copyOnSelect": false,
-  "showTabsInTitlebar": true,
-  "alwaysShowTabs": true,
+  "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
   "disabledProfileSources": [
     "Windows.Terminal.Azure",
-    "Windows.Terminal.PowershellCore",
-    "Windows.Terminal.Wsl"
+    "Windows.Terminal.Wsl",
+    "Windows.Terminal.VisualStudio"
   ],
-  "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
   "keybindings": [
     {
       "id": "Terminal.CopyToClipboard",
       "keys": "ctrl+c"
     },
     {
-      "id": "Terminal.FindText",
-      "keys": "ctrl+shift+f"
-    },
-    {
       "id": "Terminal.PasteFromClipboard",
       "keys": "ctrl+v"
+    },
+    {
+      "id": "Terminal.FindText",
+      "keys": "ctrl+shift+f"
     },
     {
       "id": "Terminal.DuplicatePaneAuto",
@@ -38,15 +37,21 @@
   ],
   "profiles": {
     "defaults": {
+      "bellStyle": "none",
       "colorScheme": "GruvboxDarkHard",
-      "scrollbarState": "hidden",
       "font": {
         "face": "Cascadia Code",
         "size": 12
       },
-      "bellStyle": "none"
+      "scrollbarState": "hidden"
     },
     "list": [
+      {
+        "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+        "hidden": false,
+        "name": "PowerShell",
+        "source": "Windows.Terminal.PowershellCore"
+      },
       {
         "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -58,61 +63,56 @@
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
         "hidden": false,
         "name": "Command Prompt"
-      },
-      {
-        "guid": "{7445729f-c6b2-596b-a5a4-981e2828c09a}",
-        "hidden": false,
-        "name": "Developer Command Prompt for VS 2022",
-        "source": "Windows.Terminal.VisualStudio"
-      },
-      {
-        "guid": "{5dcfe395-c547-54bc-965c-9a6bc42dc5d0}",
-        "hidden": false,
-        "name": "Developer PowerShell for VS 2022",
-        "source": "Windows.Terminal.VisualStudio"
       }
     ]
   },
   "schemes": [
     {
-      "name": "GruvboxDarkHard",
-      "black": "#1b1b1b",
-      "red": "#cc241d",
-      "green": "#98971a",
-      "yellow": "#d79921",
-      "blue": "#458588",
-      "purple": "#b16286",
-      "cyan": "#689d6a",
-      "white": "#a89984",
-      "brightBlack": "#928374",
-      "brightRed": "#fb4934",
-      "brightGreen": "#b8bb26",
-      "brightYellow": "#fabd2f",
-      "brightBlue": "#83a598",
-      "brightPurple": "#d3869b",
-      "brightCyan": "#8ec07c",
-      "brightWhite": "#ebdbb2",
       "background": "#000000",
-      "foreground": "#ebdbb2",
-      "selectionBackground": "#665c54",
-      "cursorColor": "#ebdbb2"
+      "black": "#1B1B1B",
+      "blue": "#458588",
+      "brightBlack": "#928374",
+      "brightBlue": "#83A598",
+      "brightCyan": "#8EC07C",
+      "brightGreen": "#B8BB26",
+      "brightPurple": "#D3869B",
+      "brightRed": "#FB4934",
+      "brightWhite": "#EBDBB2",
+      "brightYellow": "#FABD2F",
+      "cursorColor": "#EBDBB2",
+      "cyan": "#689D6A",
+      "foreground": "#EBDBB2",
+      "green": "#98971A",
+      "name": "GruvboxDarkHard",
+      "purple": "#B16286",
+      "red": "#CC241D",
+      "selectionBackground": "#665C54",
+      "white": "#A89984",
+      "yellow": "#D79921"
     }
   ],
+  "showTabsInTitlebar": true,
+  "theme": "Black",
   "themes": [
     {
       "name": "Black",
-      "window": {
-        "applicationTheme": "dark"
-      },
       "tab": {
         "background": "#00000000",
-        "unfocusedBackground": "#000000ff"
+        "iconStyle": "default",
+        "showCloseButton": "always",
+        "unfocusedBackground": "#000000FF"
       },
       "tabRow": {
         "background": "terminalBackground",
-        "unfocusedBackground": "#000000ff"
+        "unfocusedBackground": "#000000FF"
+      },
+      "window": {
+        "applicationTheme": "dark",
+        "experimental.rainbowFrame": false,
+        "frame": null,
+        "unfocusedFrame": null,
+        "useMica": false
       }
     }
-  ],
-  "theme": "Black"
+  ]
 }
