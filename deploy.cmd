@@ -6,6 +6,7 @@ winget install --exact --id=Discord.Discord
 winget install --exact --id=Logitech.GHUB
 winget install --exact --id=Microsoft.PowerShell
 winget install --exact --id=Microsoft.PowerToys
+winget install --exact --id=Microsoft.VisualStudio.Community.Insiders
 winget install --exact --id=RamenSoftware.Windhawk
 winget install --exact --id=Spotify.Spotify
 winget install --exact --id=Valve.Steam
