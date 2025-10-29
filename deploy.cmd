@@ -8,7 +8,6 @@ winget install --exact --id=Microsoft.PowerShell
 winget install --exact --id=Microsoft.PowerToys
 winget install --exact --id=Microsoft.VisualStudio.Community.Insiders
 winget install --exact --id=RamenSoftware.Windhawk
-winget install --exact --id=Spotify.Spotify
 winget install --exact --id=Valve.Steam
 winget install --exact --id=Wacom.WacomTabletDriver
 winget install --exact --id=Zen-Team.Zen-Browser
