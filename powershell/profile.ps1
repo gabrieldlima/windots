@@ -1,1 +1,0 @@
-Set-PSReadLineOption -EditMode Emacs
