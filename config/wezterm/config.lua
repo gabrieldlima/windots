@@ -5,8 +5,8 @@ local M = {}
 
 -- Config
 -- =============================================================================
-M.default_prog = { "pwsh", "-nologo" }
-M.font = wezterm.font_with_fallback { "JetBrains Mono", "Cascadia Code" }
+M.default_prog = { "nu" }
+M.font = wezterm.font_with_fallback { "Cascadia Code", "JetBrains Mono" }
 M.font_size = 11
 M.check_for_updates = false
 M.window_close_confirmation = "NeverPrompt"
@@ -29,43 +29,43 @@ local color_overrides = wezterm.color.get_builtin_schemes()["GruvboxDarkHard"]
 color_overrides.background = "#000000"
 
 M.color_schemes = {
-    ["GruvboxDarkHard"] = color_overrides,
+  ["GruvboxDarkHard"] = color_overrides,
 }
 M.color_scheme = "GruvboxDarkHard"
 
 M.colors = {
-    tab_bar = {
-        background = "#000000",
+  tab_bar = {
+    background = "#000000",
 
-        active_tab = {
-            bg_color = "#458588",
-            fg_color = "#000000",
-            intensity = "Bold",
-        },
-
-        inactive_tab = {
-            bg_color = "#000000",
-            fg_color = "#ebdbb2",
-        },
-
-        inactive_tab_hover = {
-            bg_color = "#000000",
-            fg_color = "#ebdbb2",
-            italic = true,
-        },
-
-        new_tab = {
-            bg_color = "#000000",
-            fg_color = "#ebdbb2",
-            intensity = "Bold",
-        },
-
-        new_tab_hover = {
-            bg_color = "#000000",
-            fg_color = "#ebdbb2",
-            intensity = "Bold",
-        },
+    active_tab = {
+      bg_color = "#458588",
+      fg_color = "#000000",
+      intensity = "Bold",
     },
+
+    inactive_tab = {
+      bg_color = "#000000",
+      fg_color = "#ebdbb2",
+    },
+
+    inactive_tab_hover = {
+      bg_color = "#000000",
+      fg_color = "#ebdbb2",
+      italic = true,
+    },
+
+    new_tab = {
+      bg_color = "#000000",
+      fg_color = "#ebdbb2",
+      intensity = "Bold",
+    },
+
+    new_tab_hover = {
+      bg_color = "#000000",
+      fg_color = "#ebdbb2",
+      intensity = "Bold",
+    },
+  },
 }
 
 M.command_palette_bg_color = "#000000"
@@ -77,25 +77,25 @@ M.command_palette_rows = 14
 -- Launcher
 -- =============================================================================
 M.launch_menu = {
-    {
-        label = "MSVC Insiders - Command Prompt",
-        cwd = home .. "\\Source",
-        args = {
-            "cmd",
-            "/k",
-            "C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\Common7\\Tools\\VsDevCmd.bat"
-        },
+  {
+    label = "MSVC Insiders - Command Prompt",
+    cwd = home .. "\\Source",
+    args = {
+      "cmd",
+      "/k",
+      "C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\Common7\\Tools\\VsDevCmd.bat"
     },
-    {
-        label = "MSVC Insiders - Powershell",
-        cwd = home .. "\\Source",
-        args = {
-            "pwsh",
-            "-NoExit",
-            "-Command",
-            "& 'C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\Common7\\Tools\\Launch-VsDevShell.ps1'"
-        },
+  },
+  {
+    label = "MSVC Insiders - Powershell",
+    cwd = home .. "\\Source",
+    args = {
+      "pwsh",
+      "-NoExit",
+      "-Command",
+      "& 'C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\Common7\\Tools\\Launch-VsDevShell.ps1'"
     },
+  },
 }
 
 return M
