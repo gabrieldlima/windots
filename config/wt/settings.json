@@ -72,16 +72,20 @@
             "keys": "menu"
         },
         {
-            "id": "Terminal.CopyToClipboard",
-            "keys": "ctrl+shift+c"
-        },
-        {
             "id": null,
             "keys": "alt+shift+right"
         },
         {
             "id": null,
             "keys": "ctrl+alt+5"
+        },
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+shift+c"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+5"
         },
         {
             "id": null,
@@ -94,10 +98,6 @@
         {
             "id": null,
             "keys": "ctrl+shift+comma"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+5"
         },
         {
             "id": "Terminal.MoveFocusUp",
@@ -314,7 +314,7 @@
             "colorScheme": "GruvboxDarkHard",
             "font": 
             {
-                "face": "Iosevka Nerd Font",
+                "face": "Cascadia Code",
                 "size": 12
             },
             "scrollbarState": "hidden"
@@ -341,36 +341,10 @@
                 "name": "Command Prompt"
             },
             {
-                "guid": "{b91318cf-30f6-578b-9b0e-72d4a9c80526}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 18 [Preview]",
-                "source": "Windows.Terminal.VisualStudio",
-                "startingDirectory": "C:\\Users\\gabrielgl\\Source"
-            },
-            {
-                "guid": "{541d49ca-a4b1-5b4e-8de7-2c0748a26fc5}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 18 [Preview]",
-                "source": "Windows.Terminal.VisualStudio",
-                "startingDirectory": "C:\\Users\\gabrielgl\\Source"
-            },
-            {
                 "guid": "{47302f9c-1ac4-566c-aa3e-8cf29889d6ab}",
                 "hidden": false,
                 "name": "Nushell",
                 "source": "nu"
-            },
-            {
-                "guid": "{e657e25f-cfd5-5acc-8120-9502ebd68dc1}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 18",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{b173aba5-6072-5619-8c38-377be6f21675}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 18",
-                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
