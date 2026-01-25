@@ -39,14 +39,15 @@ scoop install less
 scoop install llvm
 scoop install lua-language-server
 scoop install neovim-nightly
+scoop install ninja
 scoop install nu
 scoop install pcsx2
 scoop install poppler
+scoop install powertoys
 scoop install ppsspp
 scoop install pwsh
 scoop install resvg
 scoop install ripgrep
-scoop install sharpkeys
 scoop install steam
 scoop install vcredist
 scoop install vcredist2005
