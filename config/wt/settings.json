@@ -53,7 +53,7 @@
     "centerOnLaunch": true,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{47302f9c-1ac4-566c-aa3e-8cf29889d6ab}",
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
     "disableAnimations": true,
     "disabledProfileSources": 
     [
@@ -64,32 +64,12 @@
     "keybindings": 
     [
         {
-            "id": "Terminal.MoveFocusDown",
-            "keys": "alt+j"
-        },
-        {
             "id": null,
             "keys": "menu"
         },
         {
-            "id": null,
-            "keys": "alt+shift+right"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+alt+5"
-        },
-        {
-            "id": "Terminal.CopyToClipboard",
-            "keys": "ctrl+shift+c"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+5"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+2"
+            "id": "Terminal.MoveFocusDown",
+            "keys": "alt+j"
         },
         {
             "id": "Terminal.MoveFocusLeft",
@@ -97,7 +77,27 @@
         },
         {
             "id": null,
+            "keys": "ctrl+shift+2"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+5"
+        },
+        {
+            "id": null,
             "keys": "ctrl+shift+comma"
+        },
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+shift+c"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+5"
+        },
+        {
+            "id": null,
+            "keys": "alt+shift+right"
         },
         {
             "id": "Terminal.MoveFocusUp",
