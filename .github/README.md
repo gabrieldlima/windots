@@ -6,7 +6,7 @@
 
 ### Install:
 ```cmd
-git clone https://github.com/gabrieldlima/dotfiles .dotfiles
+git clone https://github.com/gabrieldlima/windots .dotfiles
 cd .dotfiles
 .\deploy.ps1
 ```
