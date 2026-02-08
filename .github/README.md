@@ -8,7 +8,5 @@
 ```cmd
 git clone https://github.com/gabrieldlima/dotfiles .dotfiles
 cd .dotfiles
-winget install --id=astral-sh.uv -e
-uv python install
-uv run deploy.py
+.\deploy.ps1
 ```
