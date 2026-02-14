@@ -60,6 +60,7 @@ function winget-install () {
     winget install Logitech.GHUB
     winget install Microsoft.VisualStudio.Community
     winget install Microsoft.VisualStudioCode
+    winget install Python.Python.3.10
     winget install RamenSoftware.Windhawk
     winget install Wacom.WacomTabletDriver
 }
