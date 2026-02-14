@@ -40,6 +40,7 @@ function scoop-install () {
     scoop install powertoys
     scoop install pwsh
     scoop install steam
+    scoop install uv
     scoop install zen-browser
     scoop install zoxide
 }
