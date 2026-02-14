@@ -53,7 +53,7 @@
     "centerOnLaunch": true,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "disableAnimations": true,
     "disabledProfileSources": 
     [
@@ -88,16 +88,16 @@
             "keys": "ctrl+shift+comma"
         },
         {
-            "id": "Terminal.CopyToClipboard",
-            "keys": "ctrl+shift+c"
-        },
-        {
             "id": null,
             "keys": "ctrl+alt+5"
         },
         {
             "id": null,
             "keys": "alt+shift+right"
+        },
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+shift+c"
         },
         {
             "id": "Terminal.MoveFocusUp",
@@ -311,10 +311,10 @@
         "defaults": 
         {
             "bellStyle": "none",
-            "colorScheme": "GruvboxDarkHard",
+            "colorScheme": "Dark+ (modified)",
             "font": 
             {
-                "face": "Cascadia Code",
+                "face": "Iosevka Term",
                 "size": 12
             },
             "scrollbarState": "hidden"
@@ -322,7 +322,7 @@
         "list": 
         [
             {
-                "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -noLogo",
+                "commandline": "\"C:\\Users\\gabrielgl\\scoop\\shims\\pwsh.exe\" -noLogo",
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
@@ -339,19 +339,36 @@
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
-            },
-            {
-                "guid": "{47302f9c-1ac4-566c-aa3e-8cf29889d6ab}",
-                "hidden": false,
-                "name": "Nushell",
-                "source": "nu"
             }
         ]
     },
     "schemes": 
     [
         {
-            "background": "#000000",
+            "background": "#0F0F0F",
+            "black": "#000000",
+            "blue": "#2472C8",
+            "brightBlack": "#666666",
+            "brightBlue": "#3B8EEA",
+            "brightCyan": "#29B8DB",
+            "brightGreen": "#23D18B",
+            "brightPurple": "#D670D6",
+            "brightRed": "#F14C4C",
+            "brightWhite": "#E5E5E5",
+            "brightYellow": "#F5F543",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#11A8CD",
+            "foreground": "#CCCCCC",
+            "green": "#0DBC79",
+            "name": "Dark+ (modified)",
+            "purple": "#BC3FBC",
+            "red": "#CD3131",
+            "selectionBackground": "#3A3D41",
+            "white": "#E5E5E5",
+            "yellow": "#E5E510"
+        },
+        {
+            "background": "#0F0F0F",
             "black": "#1B1B1B",
             "blue": "#458588",
             "brightBlack": "#928374",
@@ -385,15 +402,15 @@
             "name": "Black",
             "tab": 
             {
-                "background": "#00000000",
+                "background": "#0F0F0F00",
                 "iconStyle": "default",
                 "showCloseButton": "always",
-                "unfocusedBackground": "#000000FF"
+                "unfocusedBackground": "#0F0F0FFF"
             },
             "tabRow": 
             {
                 "background": "terminalBackground",
-                "unfocusedBackground": "#000000FF"
+                "unfocusedBackground": "#0F0F0FFF"
             },
             "window": 
             {
