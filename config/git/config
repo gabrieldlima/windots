@@ -7,3 +7,5 @@
     autocrlf = true
     eol = crlf
     safecrlf = false
+[credential "helperselector"]
+	selected = manager
