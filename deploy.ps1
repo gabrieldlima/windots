@@ -43,10 +43,10 @@ function scoop-install () {
     scoop install llvm
     scoop install powertoys
     scoop install pwsh
+    scoop install sioyek
     scoop install steam
     scoop install uv
     scoop install zen-browser
-    scoop install zoxide
 }
 
 
