@@ -2,7 +2,11 @@
 # Create symbolic links because i'm used to use GNU Stow on *nix.
 # --------------------------------------------------------------------------
 function make-link ($target, $link) {
-    New-Item -Path $link -ItemType SymbolicLink -Value $target
+    # Remove existing file/link at destination before creating
+    if (Test-Path $link) {
+        Remove-Item $link -Force
+    }
+    New-Item -Path $link -ItemType SymbolicLink -Value $target -Force
 }
 
 function make-farm () {
