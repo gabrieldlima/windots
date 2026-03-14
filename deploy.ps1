@@ -1,8 +1,29 @@
+# ╔═════════════════════════════════════════════════════════╗
+# ║██╗    ██╗██╗███╗   ██╗██████╗  ██████╗ ████████╗███████╗║
+# ║██║    ██║██║████╗  ██║██╔══██╗██╔═══██╗╚══██╔══╝██╔════╝║
+# ║██║ █╗ ██║██║██╔██╗ ██║██║  ██║██║   ██║   ██║   ███████╗║
+# ║██║███╗██║██║██║╚██╗██║██║  ██║██║   ██║   ██║   ╚════██║║
+# ║╚███╔███╔╝██║██║ ╚████║██████╔╝╚██████╔╝   ██║   ███████║║
+# ║ ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝    ╚═╝   ╚══════╝║
+# ╚═════════════════════════════════════════════════════════╝
+
+
 # --------------------------------------------------------------------------
-# Create symbolic links because i'm used to use GNU Stow on *nix.
+# Create required folders
+# --------------------------------------------------------------------------
+function make-folders () {
+    $powershellFolder = "C:\Users\gabrielgl\Documents\Powershell"
+    if (Test-Path $powershellFolder) {
+        Remove-Item $powershellFolder -Force
+    }
+    mkdir $powershellFolder
+}
+
+
+# --------------------------------------------------------------------------
+# Create symbolic links
 # --------------------------------------------------------------------------
 function make-link ($target, $link) {
-    # Remove existing file/link at destination before creating
     if (Test-Path $link) {
         Remove-Item $link -Force
     }
@@ -19,40 +40,7 @@ function make-farm () {
 
 
 # ------------------------------------------------------------------------------
-# Install, update and add scoop packages.
-# ------------------------------------------------------------------------------
-function scoop-install () {
-    # Install scoop
-    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-    Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-
-    # Update scoop (its need git to update itself)
-    scoop install git
-    scoop update
-
-    # Add buckets
-    scoop bucket add extras
-    scoop bucket add versions
-
-    # Install packages
-    scoop install 7zip
-    scoop install cmake
-    scoop install discord
-    scoop install fastfetch
-    scoop install gimp
-    scoop install llvm
-    scoop install powertoys
-    scoop install pwsh
-    scoop install sioyek
-    scoop install steam
-    scoop install uv
-    scoop install zen-browser
-}
-
-
-# ------------------------------------------------------------------------------
-# Update and add winget packages.
-# NOTE: I only use winget for packages that has a specific problem with scoop.
+# Update and install winget packages
 # ------------------------------------------------------------------------------
 function winget-install () {
     # Update winget
@@ -62,17 +50,18 @@ function winget-install () {
     # Install packages
     winget install AgileBits.1Password
     winget install Logitech.GHUB
+    winget install Microsoft.Powershell
     winget install Microsoft.VisualStudio.Community
     winget install Microsoft.VisualStudioCode
-    winget install Python.Python.3.10
     winget install RamenSoftware.Windhawk
-    winget install Wacom.WacomTabletDriver
+    winget install Zen-Team.Zen-Browser
 }
 
 
-# --------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Run all
-# --------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
+
+make-folders
 make-farm
-scoop-install
 winget-install
