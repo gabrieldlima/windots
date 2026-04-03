@@ -36,6 +36,7 @@ function make-farm () {
     make-link "${userprofile}\.dotfiles\config\vim\.vimrc" "${userprofile}\.vsvimrc"
     make-link "${userprofile}\.dotfiles\config\wt\settings.json" "${userprofile}\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
     make-link "${userprofile}\.dotfiles\config\git\config" "${userprofile}\.gitconfig"
+    make-link "${userprofile}\.dotfiles\config\code\settings.json" "${userprofile}\AppData\Roaming\Code\User\settings.json"
 }
 
 

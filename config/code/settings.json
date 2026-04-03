@@ -1,0 +1,42 @@
+{
+    "chat.disableAIFeatures": true,
+    "editor.colorDecorators": false,
+    "editor.fontFamily": "Iosevka",
+    "editor.fontSize": 15,
+    "editor.lineNumbers": "relative",
+    "editor.smoothScrolling": true,
+    "terminal.integrated.initialHint": false,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "window.autoDetectColorScheme": true,
+    "workbench.colorCustomizations": {
+        "[Dark Modern]": {
+            "activityBar.background": "#0f0f0f",
+            "debugToolBar.background": "#0f0f0f",
+            "editor.background": "#0f0f0f",
+            "editorGroupHeader.tabsBackground": "#0f0f0f",
+            "editorSuggestWidget.background": "#0f0f0f",
+            "input.background": "#0f0f0f",
+            "menu.background": "#0f0f0f",
+            "panel.background": "#0f0f0f",
+            "quickInput.background": "#0f0f0f",
+            "sideBar.background": "#0f0f0f",
+            "sideBarSectionHeader.background": "#0f0f0f",
+            "statusBar.background": "#0f0f0f",
+            "tab.activeBackground": "#0f0f0f",
+            "tab.inactiveBackground": "#0f0f0f",
+            "titleBar.activeBackground": "#0f0f0f",
+            "titleBar.inactiveBackground": "#0f0f0f",
+        }
+    },
+    "workbench.preferredDarkColorTheme": "Dark Modern",
+}
