@@ -49,11 +49,15 @@ function winget-install () {
 
     # Install packages
     winget install AgileBits.1Password
+    winget install Fastfetch-cli.Fastfetch
+    winget install Guru3D.RTSS
     winget install Logitech.GHUB
+    winget install Microsoft.PowerToys
     winget install Microsoft.Powershell
     winget install Microsoft.VisualStudio.Community
     winget install Microsoft.VisualStudioCode
     winget install RamenSoftware.Windhawk
+    winget install Valve.Steam
     winget install Zen-Team.Zen-Browser
 }
 
