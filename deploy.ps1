@@ -12,7 +12,7 @@
 # Create required folders
 # --------------------------------------------------------------------------
 function make-folders () {
-    $powershellFolder = "C:\Users\gabrielgl\Documents\Powershell"
+    $powershellFolder = "${userprofile}\Documents\Powershell"
     if (Test-Path $powershellFolder) {
         Remove-Item $powershellFolder -Force
     }
