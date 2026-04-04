@@ -36,30 +36,32 @@ function make-farm () {
     make-link "${userprofile}\.dotfiles\config\vim\.vimrc" "${userprofile}\.vsvimrc"
     make-link "${userprofile}\.dotfiles\config\wt\settings.json" "${userprofile}\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
     make-link "${userprofile}\.dotfiles\config\git\config" "${userprofile}\.gitconfig"
-    make-link "${userprofile}\.dotfiles\config\code\settings.json" "${userprofile}\AppData\Roaming\Code\User\settings.json"
 }
 
 
 # ------------------------------------------------------------------------------
 # Update and install winget packages
 # ------------------------------------------------------------------------------
-function winget-install () {
+function make-packages () {
     # Update winget
     winget update
     winget upgrade --all
 
     # Install packages
-    winget install AgileBits.1Password
-    winget install Fastfetch-cli.Fastfetch
-    winget install Guru3D.RTSS
-    winget install Logitech.GHUB
-    winget install Microsoft.PowerToys
-    winget install Microsoft.Powershell
-    winget install Microsoft.VisualStudio.Community
-    winget install Microsoft.VisualStudioCode
-    winget install RamenSoftware.Windhawk
-    winget install Valve.Steam
-    winget install Zen-Team.Zen-Browser
+    winget install "agilebits.1password"
+    winget install "burntSushi.ripgrep.msvc"
+    winget install "fastfetch-cli.fastfetch"
+    winget install "guru3D.rtss"
+    winget install "llvm.llvm"
+    winget install "logitech.ghub"
+    winget install "microsoft.powershell"
+    winget install "microsoft.powertoys"
+    winget install "microsoft.visualstudio.community"
+    winget install "neovim.neovim"
+    winget install "ramensoftware.windhawk"
+    winget install "sharkdp.fd"
+    winget install "valve.steam"
+    winget install "zen-team.zen-browser"
 }
 
 
@@ -69,4 +71,4 @@ function winget-install () {
 
 make-folders
 make-farm
-winget-install
+make-packages
