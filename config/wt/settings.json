@@ -67,16 +67,20 @@
             "keys": "alt+j"
         },
         {
-            "id": "Terminal.CopyToClipboard",
-            "keys": "ctrl+shift+c"
-        },
-        {
             "id": null,
             "keys": "ctrl+alt+5"
         },
         {
             "id": null,
             "keys": "alt+shift+right"
+        },
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+shift+c"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+2"
         },
         {
             "id": null,
@@ -89,10 +93,6 @@
         {
             "id": "Terminal.MoveFocusLeft",
             "keys": "alt+h"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+2"
         },
         {
             "id": null,
@@ -306,10 +306,10 @@
         "defaults": 
         {
             "bellStyle": "none",
-            "colorScheme": "Dark+ (modified)",
+            "colorScheme": "GruvboxDarkHard",
             "font": 
             {
-                "face": "Iosevka",
+                "face": "Iosevka Nerd Font",
                 "size": 12
             },
             "scrollbarState": "hidden"
