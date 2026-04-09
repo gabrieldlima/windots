@@ -59,28 +59,16 @@
     "keybindings": 
     [
         {
-            "id": null,
-            "keys": "menu"
-        },
-        {
             "id": "Terminal.MoveFocusDown",
             "keys": "alt+j"
         },
         {
             "id": null,
-            "keys": "ctrl+alt+5"
+            "keys": "menu"
         },
         {
             "id": null,
-            "keys": "alt+shift+right"
-        },
-        {
-            "id": "Terminal.CopyToClipboard",
-            "keys": "ctrl+shift+c"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+2"
+            "keys": "ctrl+shift+comma"
         },
         {
             "id": null,
@@ -88,11 +76,23 @@
         },
         {
             "id": null,
-            "keys": "ctrl+shift+comma"
+            "keys": "ctrl+shift+2"
         },
         {
             "id": "Terminal.MoveFocusLeft",
             "keys": "alt+h"
+        },
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+shift+c"
+        },
+        {
+            "id": null,
+            "keys": "alt+shift+right"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+5"
         },
         {
             "id": null,
@@ -352,7 +352,7 @@
     "schemes": 
     [
         {
-            "background": "#0F0F0F",
+            "background": "#000000",
             "black": "#000000",
             "blue": "#2472C8",
             "brightBlack": "#666666",
@@ -375,7 +375,7 @@
             "yellow": "#E5E510"
         },
         {
-            "background": "#0F0F0F",
+            "background": "#000000",
             "black": "#1B1B1B",
             "blue": "#458588",
             "brightBlack": "#928374",
@@ -409,15 +409,15 @@
             "name": "Black",
             "tab": 
             {
-                "background": "#0F0F0F00",
+                "background": "#00000000",
                 "iconStyle": "default",
                 "showCloseButton": "always",
-                "unfocusedBackground": "#0F0F0FFF"
+                "unfocusedBackground": "#000000FF"
             },
             "tabRow": 
             {
                 "background": "terminalBackground",
-                "unfocusedBackground": "#0F0F0FFF"
+                "unfocusedBackground": "#000000FF"
             },
             "window": 
             {
